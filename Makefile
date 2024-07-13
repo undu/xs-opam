@@ -18,7 +18,7 @@ $(NAME).tar.gz:
 	# Don't cache unneeded packages (like dev tools)
 	opam admin filter --recursive --required-by xs-toolstack -y
 	# Don't cache any xapi dev packages
-	opam admin filter '*.master' --remove -y
+	opam admin filter '*.xapi' --remove -y
 	# Don't cache compilable ocaml versions
 	opam admin filter 'ocaml-base-compiler' --remove -y
 	opam admin cache |& tee cache.log
