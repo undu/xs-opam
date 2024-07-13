@@ -12,6 +12,7 @@ depends: [
   "base-unix"
   "odoc" {with-doc}
   "xapi-stdext-pervasives" {= version}
+  "xapi-stdext-unix" {= version}
 ]
 build: [
   ["dune" "subst"] {dev}
