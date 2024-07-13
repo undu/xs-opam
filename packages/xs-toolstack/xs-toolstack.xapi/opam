@@ -42,4 +42,5 @@ depends: [
   "xapi-xenopsd-simulator"
   "xe"
   "xen-api-client"
+  "ocamlformat"
 ]
